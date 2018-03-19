@@ -1,0 +1,181 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource."
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_IMAGE_EXPLORER      ICON                    "1.ico"
+IDI_SMALL               ICON                    "1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_IMAGE_EXPLORER MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...",                    IDM_OPEN
+        MENUITEM "Open &hg2 DATA...",           IDM_OPENHG2DATA
+        MENUITEM "&Close",                      IDM_CLOSE
+        MENUITEM "&Save",                       IDM_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Backup",                     IDM_BACKUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "E&xplorer View",              IDM_EXPLORER_VIEW
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+IDC_POPUPMENU MENU 
+BEGIN
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Export raw file(->)...",     IDM_POPUPEXPORT
+        MENUITEM "&Import raw file(<-)...",     IDM_POPUPIMPORT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Image_Explorer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_IMAGE_EXPLORER,IDC_STATIC,14,14,20,20
+    LTEXT           "Image_Explorer, Version 2.3",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011 by qqj1228",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_EXIM DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Export/Import"
+FONT 8, "Ms Shell Dlg 2", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,74,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,76,50,14
+    CONTROL         "Export current file as TIM2 file",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,5,5,113,10
+    RADIOBUTTON     "Export all support files as BMP",IDC_RADIO2,5,20,112,10,WS_DISABLED
+    CONTROL         "Import TIM2 file into current file: ",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,5,35,122,10
+    EDITTEXT        IDC_EDIT2,5,50,119,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "browse...",IDC_BUTTON1,131,50,50,14,WS_DISABLED
+END
+
+IDD_EXPLORER DIALOG  0, 0, 200, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Explorer View"
+FONT 8, "Ms Shell Dlg 2"
+BEGIN
+    COMBOBOX        IDC_COMBO1,47,134,29,12,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ex/Import...",ID_EX_IMPORT,90,131,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,145,131,50,14
+    LTEXT           "Palatte No.:",IDC_STATIC,5,137,40,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_IMAGE_EXPLORER ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_IMAGE_EXPLORER      "IMAGE_EXPLORER"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "Image_Explorer"
+    IDS_COLUMN1             "Name"
+    IDS_COLUMN2             "Offset"
+    IDS_COLUMN3             "Type"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
