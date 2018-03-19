@@ -1,4 +1,4 @@
-# Text_Localize_Tool
+# Image_Explorer
 
 ## 该工具用于提取/导入PSP平台上日本一公司制作的游戏资源
 
